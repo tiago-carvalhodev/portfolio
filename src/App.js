@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { BrowserRouter } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
+import Home from './components/Home/home';
+import Portfolio from './components/Portfolio/portfolio';
+import Contact from './components/Contact/contact';
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+class App extends Component {
+  render() {
+    return (
+      <div>
+      <nav data-nav>
+        <h1> Tiago Carvalho </h1>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </nav>
+
+      { /* Route components are rendered if the path prop matches the current URL */}
+      <Routes>
+        <Route path="/" element={<Home/>} > </Route>
+        <Route path="/portfolio" element={<Portfolio/>}> </Route>
+        <Route path="/contact" element={<Contact/>}> </Route>
+      </Routes>
     </div>
-  );
+    );
+  }
 }
 
 export default App;

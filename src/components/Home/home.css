@@ -1,0 +1,16 @@
+[data-f] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+[data-f] div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+[data-f] div p {
+  width: 60%;
+}
+
+/*# sourceMappingURL=home.css.map */

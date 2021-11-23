@@ -1,0 +1,23 @@
+[data-nav] {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  h1 {
+    margin-left: 2rem;
+    color: #90B494;
+    text-transform: uppercase;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 2rem;
+    list-style: none;
+    width: 20%;
+    li {
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+}
