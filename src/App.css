@@ -1,12 +1,23 @@
+html {
+  background: #393E46;
+}
+
+[data-navMob] {
+  display: none;
+}
+
 [data-nav] {
   display: flex;
   font-size: 20px;
   justify-content: space-between;
+  align-items: center;
+  font-family: "Ropa Sans", sans-serif;
 }
 [data-nav] h1 {
   margin-left: 2rem;
-  color: #90B494;
+  color: #FD7014;
   text-transform: uppercase;
+  font-size: 40px;
 }
 [data-nav] ul {
   display: flex;
@@ -16,8 +27,23 @@
   width: 20%;
 }
 [data-nav] ul li a {
+  text-transform: uppercase;
   text-decoration: none;
-  color: #000;
+  color: #eee;
+  font-size: 25px;
+}
+
+@media (max-width: 760px) {
+  [data-nav] {
+    align-items: center;
+    justify-content: center;
+  }
+  [data-nav] h1 {
+    font-size: 30px;
+  }
+  [data-nav] ul {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

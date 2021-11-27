@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import "./portfolio.css"
 
-class Portfolio extends Component {
-  render() {
-    return (
-        <div>
-          <h2>Portfolio</h2>
-        </div>
-    );
-  }
+const Portfolio = () => {
+  return (
+    <div data-wrapP>
+      <h1>Skills</h1>
+    </div>
+  );
 }
 
 export default Portfolio;

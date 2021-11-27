@@ -1,0 +1,121 @@
+html {
+  background: #393E46;
+}
+
+[data-navMob] {
+  display: none;
+}
+
+[data-close] {
+  display: none;
+}
+
+[data-nav] {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Ropa Sans", sans-serif;
+}
+[data-nav] h1 {
+  margin-left: 2rem;
+  color: #FD7014;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+[data-nav] ul {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 2rem;
+  list-style: none;
+  width: 20%;
+}
+[data-nav] ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #eee;
+  font-size: 25px;
+}
+
+@media (max-width: 760px) {
+  [data-navMob] {
+    display: block;
+  }
+  [data-navMob] [data-open] :nth-child(1) {
+    background: #FD7014;
+    width: 2rem;
+    height: 0.3rem;
+    border: none;
+  }
+  [data-navMob] [data-open] :nth-child(2) {
+    width: 2rem;
+    height: 0.3rem;
+    background: #FD7014;
+    margin-top: 0.1rem;
+    border: none;
+  }
+  [data-navMob] [data-open] :nth-child(3) {
+    width: 2rem;
+    height: 0.3rem;
+    background: #FD7014;
+    margin-top: 0.1rem;
+    border: none;
+  }
+  [data-navMob] [data-close] {
+    display: block;
+  }
+  [data-navMob] [data-close] :nth-child(1) {
+    background: #FD7014;
+    width: 2.3rem;
+    height: 0.3rem;
+    border: none;
+    transform: rotate(45deg);
+  }
+  [data-navMob] [data-close] :nth-child(2) {
+    width: 2.3rem;
+    height: 0.3rem;
+    background: #FD7014;
+    margin-top: 0.1rem;
+    border: none;
+    transform: rotate(-45deg);
+  }
+
+  .nav-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+  }
+
+  .nav-options.active {
+    width: 100%;
+    height: 100%;
+    background: #393E46;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    align-content: center;
+    padding-left: 0px;
+  }
+
+  [data-nav] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  [data-nav] h1 {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
