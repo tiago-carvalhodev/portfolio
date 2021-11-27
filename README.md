@@ -4,7 +4,7 @@
 * [Setup](#setup)
 
 ## General info
-This project is my Portfolio it was created to let everyone know a little more of me my work and my skills. Hope you enjoy it :)
+This project is my Portfolio it was created to let everyone know a me little more also my work and skills. Hope you enjoy it :)
 
 ## Technologies:
 * React
