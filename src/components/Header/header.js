@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { Link, Route, Routes } from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
 import Home from '../Home/home';
 import Portfolio from '../Portfolio/portfolio';
 import Contact from '../Contact/contact';
@@ -30,13 +30,13 @@ const Header = () => {
       <h1> Tiago Carvalho </h1>
       <ul className={click ? "nav-options active" : "nav-options"}>
         <li className="option" onClick={closeMobileMenu}>
-          <Link to="/">Home</Link>
+          <NavLink activeClassName="active" to="/">Home</NavLink>
         </li>
         <li className="option" onClick={closeMobileMenu}>
-          <Link to="/work">Work</Link>
+          <NavLink activeClassName="active" to="/work">Work</NavLink>
         </li>
         <li className="option" onClick={closeMobileMenu}>
-          <Link to="/contact">Contact</Link>
+          <NavLink activeClassName="active" to="/contact">Contact</NavLink>
         </li>
       </ul>
     </nav>
