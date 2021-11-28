@@ -11,7 +11,7 @@ const Portfolio = () => {
         <div data-project>
           <h3> Portfolio </h3>
           <img src={icon} width="300" height="150" alt="Screen from the project" />
-          <p> Project developed on the personal scope developed in React. </p>
+          <p> Project developed on the personal scope with React. </p>
         </div>
         <div data-project>
           <h3> Le Koala Autrement </h3>
