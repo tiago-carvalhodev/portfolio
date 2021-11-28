@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
-[data-wrapH] {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 @keyframes appear {
   from {
     opacity: 0;
@@ -14,66 +7,6 @@
     opacity: 1;
   }
 }
-[data-f] {
-  animation: appear 6s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-[data-f] h1 {
-  text-transform: uppercase;
-  font-family: "Ropa Sans", sans-serif;
-  color: #fd7014;
-  font-size: 2.8125rem;
-}
-[data-f] p {
-  font-family: "Titillium Web", sans-serif;
-  margin: 0;
-  color: #eeee;
-  font-size: 1.875rem;
-}
-
-[data-f2] {
-  width: 60%;
-  text-align: center;
-}
-
-[data-anim] {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-[data-anim] h1 {
-  font-family: "Ropa Sans", sans-serif;
-  font-weight: bold;
-  color: #fd7014;
-  font-size: 18.75rem;
-  margin: 0;
-  margin-top: 2rem;
-}
-
-[data-btn] {
-  margin-top: 5rem;
-  color: #eee;
-  border: 2px solid #eee;
-  height: 3rem;
-  width: 10rem;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  font-size: 1.3rem;
-  text-decoration: none;
-}
-[data-btn]:hover {
-  background: #fd7014;
-  border: 2px solid #fd7014;
-  transform: rotate(-10deg) scale(1.1);
-}
-
 @keyframes slideinL {
   from {
     transform: translateX(-500%);
@@ -90,23 +23,83 @@
     transform: translateX(0%);
   }
 }
-[data-t] {
+[data-wrapH] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+[data-wrapH] [data-anim] {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+[data-wrapH] [data-anim] h1 {
+  font-family: "Ropa Sans", sans-serif;
+  font-weight: bold;
+  color: #fd7014;
+  font-size: 18.75rem;
+  margin: 0;
+  margin-top: 2rem;
+}
+[data-wrapH] [data-anim] [data-t] {
   animation: 3s slideinL;
 }
-
-[data-c] {
+[data-wrapH] [data-anim] [data-c] {
   animation: 3s slideinR;
+}
+[data-wrapH] [data-f] {
+  animation: appear 6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+[data-wrapH] [data-f] h1 {
+  text-transform: uppercase;
+  font-family: "Ropa Sans", sans-serif;
+  color: #fd7014;
+  font-size: 2.8125rem;
+}
+[data-wrapH] [data-f] p {
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+  color: #eeee;
+  font-size: 1.875rem;
+}
+[data-wrapH] [data-f] [data-f2] {
+  width: 60%;
+  text-align: center;
+}
+[data-wrapH] [data-f] [data-btn] {
+  margin-top: 5rem;
+  color: #eee;
+  border: 2px solid #eee;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+[data-wrapH] [data-f] [data-btn]:hover {
+  background: #fd7014;
+  border: 2px solid #fd7014;
+  transform: rotate(-10deg) scale(1.1);
 }
 
 @media screen and (width: 1440px) {
-  [data-anim] h1 {
+  [data-wrapH] [data-anim] h1 {
     font-size: 200px;
   }
-
-  [data-f] h1 {
+  [data-wrapH] [data-f] h1 {
     font-size: 30px;
   }
-  [data-f] p {
+  [data-wrapH] [data-f] p {
     font-size: 23px;
   }
 }
@@ -114,28 +107,51 @@
   [data-wrapH] {
     gap: 4rem;
   }
-
-  [data-anim] {
+  [data-wrapH] [data-anim] {
     margin-top: 2rem;
     width: 100%;
     animation: none !important;
   }
-  [data-anim] h1 {
+  [data-wrapH] [data-anim] h1 {
     font-size: 150px;
   }
-
-  [data-f] {
+  [data-wrapH] [data-f] {
     width: 100%;
   }
-  [data-f] h1 {
+  [data-wrapH] [data-f] h1 {
     font-size: 21px;
   }
-  [data-f] p {
+  [data-wrapH] [data-f] p {
     font-size: 16px;
     font-weight: 500 !important;
   }
-
-  [data-f2] {
+  [data-wrapH] [data-f] [data-f2] {
+    width: 80% !important;
+  }
+}
+@media (max-width: 360px) {
+  [data-wrapH] {
+    gap: 2rem;
+  }
+  [data-wrapH] [data-anim] {
+    margin-top: 2rem;
+    width: 100%;
+    animation: none !important;
+  }
+  [data-wrapH] [data-anim] h1 {
+    font-size: 130px;
+  }
+  [data-wrapH] [data-f] {
+    width: 100%;
+  }
+  [data-wrapH] [data-f] h1 {
+    font-size: 18px;
+  }
+  [data-wrapH] [data-f] p {
+    font-size: 14px;
+    font-weight: 500 !important;
+  }
+  [data-wrapH] [data-f] [data-f2] {
     width: 80% !important;
   }
 }

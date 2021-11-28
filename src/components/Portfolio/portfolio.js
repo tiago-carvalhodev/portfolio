@@ -20,6 +20,7 @@ const Portfolio = () => {
           <a href="https://lekoalaautrement.corsica" target="_blank" data-btnS> Check it out </a>
         </div>
       </div>
+      <a href="/contact" data-btn> CONTACT ME</a>
     </div>
   );
 }

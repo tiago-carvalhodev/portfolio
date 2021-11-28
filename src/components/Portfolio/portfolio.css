@@ -68,6 +68,25 @@
   border: 2px solid #fd7014;
   transform: scale(1.1);
 }
+[data-wrapP] [data-btn] {
+  margin-top: 2rem;
+  color: #eee;
+  border: 2px solid #eee;
+  height: 2.3rem;
+  width: 10rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+[data-wrapP] [data-btn]:hover {
+  background: #fd7014;
+  border: 2px solid #fd7014;
+  transform: rotate(-10deg) scale(1.1);
+}
 
 @media screen and (max-width: 1440px) {
   [data-wrapP] h1 {
@@ -98,12 +117,11 @@
     height: 100px;
   }
   [data-wrapP] [data-gridP] {
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem !important;
+    gap: 1rem !important;
   }
   [data-wrapP] [data-gridP] [data-project] {
     width: 80%;
