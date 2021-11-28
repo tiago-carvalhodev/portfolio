@@ -18,8 +18,11 @@
 [data-wrapC] h1 {
   color: #Fd7014;
   text-transform: uppercase;
+  font-size: 2.8125rem;
+  font-family: "Ropa Sans", sans-serif;
 }
 [data-wrapC] a {
+  font-family: "Titillium Web", sans-serif;
   color: #eee;
   font-size: 20px;
   text-decoration: none;
