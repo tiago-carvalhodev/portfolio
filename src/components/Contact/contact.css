@@ -1,0 +1,70 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+[data-wrapC] {
+  animation: appear 6s;
+  color: #eeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+[data-wrapC] h1 {
+  color: #Fd7014;
+  text-transform: uppercase;
+}
+[data-wrapC] a {
+  color: #eee;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+[data-wrapC] a:hover {
+  color: #Fd7014;
+}
+[data-wrapC] [data-content] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+[data-wrapC] [data-content] [data-socials] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media (max-width: 760px) {
+  iframe {
+    display: none;
+  }
+
+  [data-wrapC] {
+    margin-top: 3rem;
+  }
+  [data-wrapC] a {
+    font-size: 30px !important;
+  }
+  [data-wrapC] [data-content] {
+    margin-top: 2rem;
+  }
+  [data-wrapC] [data-content] [data-socials] {
+    gap: 5rem;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
