@@ -10,6 +10,13 @@ const Header = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  const isBrowser = typeof window !== "undefined";
+
+  if (isBrowser) {
+    document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale='+(1/window.devicePixelRatio)+', maximum-scale=1.0, user-scalable=0');
+  }
+  
   return (
     <div>
     <nav data-nav >
